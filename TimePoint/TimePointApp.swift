@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TimePointApp: App {
+    @StateObject private var viewRouter = ViewRouter()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(viewRouter)
         }
     }
 }
