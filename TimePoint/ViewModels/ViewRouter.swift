@@ -9,10 +9,12 @@ import Foundation
 
 class ViewRouter: ObservableObject {
     // here you can decide which view to show at launch
-    @Published var currentTabId: TabId = .home
+    @Published var currentPageId: PageId = .home
 }
 
-enum TabId {
+enum PageId {
     case home
+    case timeline
+    case rules
     case settings
 }

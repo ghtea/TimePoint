@@ -11,6 +11,8 @@
 		730D4A242765A21B00A9968E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730D4A232765A21B00A9968E /* SettingsScreen.swift */; };
 		730D4A2E2765EE6C00A9968E /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730D4A2D2765EE6C00A9968E /* TabBarIcon.swift */; };
 		730D4A3227660BDF00A9968E /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730D4A3127660BDF00A9968E /* ViewRouter.swift */; };
+		730D4A342766431600A9968E /* RulesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730D4A332766431600A9968E /* RulesScreen.swift */; };
+		730D4A36276643D500A9968E /* TimelineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730D4A35276643D500A9968E /* TimelineScreen.swift */; };
 		736A1C262764DC100049B882 /* TimePointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736A1C252764DC100049B882 /* TimePointApp.swift */; };
 		736A1C282764DC100049B882 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736A1C272764DC100049B882 /* RootView.swift */; };
 		736A1C2A2764DC110049B882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736A1C292764DC110049B882 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		730D4A232765A21B00A9968E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		730D4A2D2765EE6C00A9968E /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
 		730D4A3127660BDF00A9968E /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		730D4A332766431600A9968E /* RulesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesScreen.swift; sourceTree = "<group>"; };
+		730D4A35276643D500A9968E /* TimelineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScreen.swift; sourceTree = "<group>"; };
 		736A1C222764DC100049B882 /* TimePoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimePoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		736A1C252764DC100049B882 /* TimePointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePointApp.swift; sourceTree = "<group>"; };
 		736A1C272764DC100049B882 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				730D4A212765A1D800A9968E /* HomeScreen.swift */,
 				730D4A232765A21B00A9968E /* SettingsScreen.swift */,
+				730D4A332766431600A9968E /* RulesScreen.swift */,
+				730D4A35276643D500A9968E /* TimelineScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -194,6 +200,8 @@
 				730D4A2E2765EE6C00A9968E /* TabBarIcon.swift in Sources */,
 				730D4A3227660BDF00A9968E /* ViewRouter.swift in Sources */,
 				736A1C262764DC100049B882 /* TimePointApp.swift in Sources */,
+				730D4A342766431600A9968E /* RulesScreen.swift in Sources */,
+				730D4A36276643D500A9968E /* TimelineScreen.swift in Sources */,
 				730D4A222765A1D800A9968E /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

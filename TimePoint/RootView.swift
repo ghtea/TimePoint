@@ -14,17 +14,23 @@ struct RootView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                switch viewRouter.currentTabId {
+                switch viewRouter.currentPageId {
                     case .home:
                         Text("Home")
-                    case .settings:
-                        Text("Settings")
+                    case .timeline:
+                        Text("Timeline")
+                case .rules:
+                    Text("Rules")
+                case .settings:
+                    Text("Settings")
                 }
                 Spacer()
                 // TabBar
                 ZStack {
                     HStack {
                         TabBarIcon(title: "Home", iconSystemName: "heart.fill", tabId: .home)
+                        TabBarIcon(title: "Timeline", iconSystemName: "clock.fill", tabId: .settings)
+                        TabBarIcon(title: "Rules", iconSystemName: "arrow.up.arrow.down.square.fill", tabId: .home)
                         TabBarIcon(title: "Settings", iconSystemName: "gearshape.fill", tabId: .settings)
                     }
                     .background(Color("TabBarBackground").shadow(radius: 2))
