@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct TimelineScreen: View {
+    
+    @StateObject private var vm = TimelineScreenViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ScrollView {
+                ForEach(vm.events, id: \.self, content: {item in
+                    VStack {
+                        Text(item.title)
+                    }
+                })
+            }
+        }
     }
 }
 
