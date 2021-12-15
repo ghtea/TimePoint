@@ -19,6 +19,7 @@
 		736A1C2D2764DC110049B882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736A1C2C2764DC110049B882 /* Preview Assets.xcassets */; };
 		73C78AE72768CACA00FE506B /* TimelineScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AE62768CACA00FE506B /* TimelineScreenViewModel.swift */; };
 		73C78AE92768CB1100FE506B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AE82768CB1100FE506B /* Event.swift */; };
+		73C78AEB2769FEFC00FE506B /* AreaBoxEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		736A1C2C2764DC110049B882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73C78AE62768CACA00FE506B /* TimelineScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScreenViewModel.swift; sourceTree = "<group>"; };
 		73C78AE82768CB1100FE506B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaBoxEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				730D4A2D2765EE6C00A9968E /* TabBarIcon.swift */,
+				73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				73C78AE92768CB1100FE506B /* Event.swift in Sources */,
 				730D4A3227660BDF00A9968E /* ViewRouter.swift in Sources */,
 				736A1C262764DC100049B882 /* TimePointApp.swift in Sources */,
+				73C78AEB2769FEFC00FE506B /* AreaBoxEvent.swift in Sources */,
 				730D4A342766431600A9968E /* RulesScreen.swift in Sources */,
 				730D4A36276643D500A9968E /* TimelineScreen.swift in Sources */,
 				730D4A222765A1D800A9968E /* HomeScreen.swift in Sources */,

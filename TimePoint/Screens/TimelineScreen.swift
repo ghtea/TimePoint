@@ -15,9 +15,7 @@ struct TimelineScreen: View {
         VStack {
             ScrollView {
                 ForEach(vm.events, id: \.self, content: {item in
-                    VStack {
-                        Text(item.title)
-                    }
+                    AreaBoxEvent(data: item, height: 200)
                 })
             }
         }
