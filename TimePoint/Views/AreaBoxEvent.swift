@@ -25,7 +25,7 @@ struct AreaBoxEvent: View {
             Text(data.title)
             Text(startAtText(data))
         }
-        .frame(height: 200)
+        .frame(height: CGFloat(height))
         .frame(
               minWidth: 0,
               maxWidth: .infinity
@@ -39,7 +39,7 @@ struct AreaBoxEvent_Previews: PreviewProvider {
     static var previews: some View {
         AreaBoxEvent(
             data: Event(title: "test event", startAt: Date(), endAt: Date()),
-            height: 200
+            height: 120
         )
     }
 }
