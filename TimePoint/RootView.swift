@@ -16,13 +16,13 @@ struct RootView: View {
             VStack {
                 switch viewRouter.currentPageId {
                     case .home:
-                        Text("Home")
+                        HomeScreen()
                     case .timeline:
-                        Text("Timeline")
+                        TimelineScreen()
                 case .rules:
-                    Text("Rules")
+                    RulesScreen()
                 case .settings:
-                    Text("Settings")
+                    SettingsScreen()
                 }
                 Spacer()
                 // TabBar

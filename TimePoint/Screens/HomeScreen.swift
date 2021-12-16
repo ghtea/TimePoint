@@ -12,6 +12,7 @@ struct HomeScreen: View {
     
     var body: some View {
         NavigationView {
+            // https://sarunw.com/posts/navigation-in-swiftui/
             
         }
     }

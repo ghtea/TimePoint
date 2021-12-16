@@ -17,12 +17,17 @@
 		736A1C282764DC100049B882 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736A1C272764DC100049B882 /* RootView.swift */; };
 		736A1C2A2764DC110049B882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736A1C292764DC110049B882 /* Assets.xcassets */; };
 		736A1C2D2764DC110049B882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736A1C2C2764DC110049B882 /* Preview Assets.xcassets */; };
+		736B9477276B693E00E0748E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736B9476276B693E00E0748E /* Colors.swift */; };
+		736B947A276B74E400E0748E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 736B9479276B74E400E0748E /* .swiftlint.yml */; };
 		73C78AE72768CACA00FE506B /* TimelineScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AE62768CACA00FE506B /* TimelineScreenViewModel.swift */; };
 		73C78AE92768CB1100FE506B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AE82768CB1100FE506B /* Event.swift */; };
 		73C78AEB2769FEFC00FE506B /* AreaBoxEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */; };
+		92C23F87558FBFA2EEA8B1BF /* Pods_TimePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103971B243DC00003DBD8EE9 /* Pods_TimePoint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		103971B243DC00003DBD8EE9 /* Pods_TimePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF61C20EF9ABBD819CFE7C4 /* Pods-TimePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePoint.debug.xcconfig"; path = "Target Support Files/Pods-TimePoint/Pods-TimePoint.debug.xcconfig"; sourceTree = "<group>"; };
 		730D4A212765A1D800A9968E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		730D4A232765A21B00A9968E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		730D4A2D2765EE6C00A9968E /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
@@ -34,9 +39,12 @@
 		736A1C272764DC100049B882 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		736A1C292764DC110049B882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736A1C2C2764DC110049B882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		736B9476276B693E00E0748E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		736B9479276B74E400E0748E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		73C78AE62768CACA00FE506B /* TimelineScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScreenViewModel.swift; sourceTree = "<group>"; };
 		73C78AE82768CB1100FE506B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaBoxEvent.swift; sourceTree = "<group>"; };
+		A3216EFF107CA81ADC7481FF /* Pods-TimePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePoint.release.xcconfig"; path = "Target Support Files/Pods-TimePoint/Pods-TimePoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,12 +52,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C23F87558FBFA2EEA8B1BF /* Pods_TimePoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D688B0F2A7245FFFB450DAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DF61C20EF9ABBD819CFE7C4 /* Pods-TimePoint.debug.xcconfig */,
+				A3216EFF107CA81ADC7481FF /* Pods-TimePoint.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		730D4A1F2765A1B900A9968E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,18 +105,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		730D4A2B2765EDC800A9968E /* New Group */ = {
+		730D4A2B2765EDC800A9968E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				736B9476276B693E00E0748E /* Colors.swift */,
 			);
-			path = "New Group";
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		736A1C192764DC100049B882 = {
 			isa = PBXGroup;
 			children = (
+				736B9479276B74E400E0748E /* .swiftlint.yml */,
 				736A1C242764DC100049B882 /* TimePoint */,
 				736A1C232764DC100049B882 /* Products */,
+				2D688B0F2A7245FFFB450DAB /* Pods */,
+				A63104DB5A1B407BAD1C2901 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +135,7 @@
 		736A1C242764DC100049B882 /* TimePoint */ = {
 			isa = PBXGroup;
 			children = (
-				730D4A2B2765EDC800A9968E /* New Group */,
+				730D4A2B2765EDC800A9968E /* Utils */,
 				730D4A282765E8E100A9968E /* Models */,
 				730D4A272765E8D900A9968E /* ViewModels */,
 				730D4A202765A1C900A9968E /* Screens */,
@@ -134,6 +156,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A63104DB5A1B407BAD1C2901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				103971B243DC00003DBD8EE9 /* Pods_TimePoint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +171,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 736A1C302764DC110049B882 /* Build configuration list for PBXNativeTarget "TimePoint" */;
 			buildPhases = (
+				EF0A6E116996D542B70D94D0 /* [CP] Check Pods Manifest.lock */,
+				736B9478276B734A00E0748E /* SwiftLint Script */,
 				736A1C1E2764DC100049B882 /* Sources */,
 				736A1C1F2764DC100049B882 /* Frameworks */,
 				736A1C202764DC100049B882 /* Resources */,
@@ -192,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736B947A276B74E400E0748E /* .swiftlint.yml in Resources */,
 				736A1C2D2764DC110049B882 /* Preview Assets.xcassets in Resources */,
 				736A1C2A2764DC110049B882 /* Assets.xcassets in Resources */,
 			);
@@ -199,12 +232,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		736B9478276B734A00E0748E /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		EF0A6E116996D542B70D94D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimePoint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		736A1C1E2764DC100049B882 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				730D4A242765A21B00A9968E /* SettingsScreen.swift in Sources */,
+				736B9477276B693E00E0748E /* Colors.swift in Sources */,
 				73C78AE72768CACA00FE506B /* TimelineScreenViewModel.swift in Sources */,
 				736A1C282764DC100049B882 /* RootView.swift in Sources */,
 				730D4A2E2765EE6C00A9968E /* TabBarIcon.swift in Sources */,
@@ -339,6 +416,7 @@
 		};
 		736A1C312764DC110049B882 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF61C20EF9ABBD819CFE7C4 /* Pods-TimePoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -369,6 +447,7 @@
 		};
 		736A1C322764DC110049B882 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3216EFF107CA81ADC7481FF /* Pods-TimePoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -9,7 +9,7 @@ import Foundation
 
 class ViewRouter: ObservableObject {
     // here you can decide which view to show at launch
-    @Published var currentPageId: PageId = .home
+    @Published var currentPageId: PageId = .timeline
 }
 
 enum PageId {
