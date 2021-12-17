@@ -15,10 +15,10 @@ struct RootView: View {
         GeometryReader { geometry in
             VStack {
                 switch viewRouter.currentPageId {
-                    case .home:
-                        HomeScreen()
-                    case .timeline:
-                        TimelineScreen()
+                case .home :
+                    HomeScreen()
+                case .timeline:
+                    TimelineScreen()
                 case .rules:
                     RulesScreen()
                 case .settings:

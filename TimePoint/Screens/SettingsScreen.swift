@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct SettingsScreen: View {
     
     struct Course: Hashable {

@@ -11,14 +11,12 @@ struct AreaBoxEvent: View {
     let data: Event
     let height: Int
     
-    
     let startAtText: (Event) -> String = { data in
-        let dateFormatter = DateFormatter();
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm";
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
         
         return dateFormatter.string(from: data.startAt)
     }
-    
     
     var body: some View {
         VStack(alignment: .leading) {

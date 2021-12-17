@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E8354726-C868-4533-8803-ECAEE60C3F37"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7827326E-7B19-4AE1-802B-026480BAC5CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimePoint/ViewModels/TimelineScreenViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "7827326E-7B19-4AE1-802B-026480BAC5CE - 13bb35b41bded46a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TimePoint.TimelineScreenViewModel.deinit"
+                  moduleName = "TimePoint"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wiz/Code/others/TimePoint/TimePoint/ViewModels/TimelineScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "7827326E-7B19-4AE1-802B-026480BAC5CE - bb94a99ea00c2e07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TimePoint.TimelineScreenViewModel.__deallocating_deinit"
+                  moduleName = "TimePoint"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wiz/Code/others/TimePoint/TimePoint/ViewModels/TimelineScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7827326E-7B19-4AE1-802B-026480BAC5CE - 128661aeb7df6990"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TimePoint.TimelineScreenViewModel.__allocating_init() -&gt; TimePoint.TimelineScreenViewModel"
+                  moduleName = "TimePoint"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wiz/Code/others/TimePoint/TimePoint/ViewModels/TimelineScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7827326E-7B19-4AE1-802B-026480BAC5CE - b3e9062cb61e39bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TimePoint.TimelineScreenViewModel.init() -&gt; TimePoint.TimelineScreenViewModel"
+                  moduleName = "TimePoint"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wiz/Code/others/TimePoint/TimePoint/ViewModels/TimelineScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

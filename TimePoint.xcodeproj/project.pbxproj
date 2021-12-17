@@ -22,12 +22,9 @@
 		73C78AE72768CACA00FE506B /* TimelineScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AE62768CACA00FE506B /* TimelineScreenViewModel.swift */; };
 		73C78AE92768CB1100FE506B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AE82768CB1100FE506B /* Event.swift */; };
 		73C78AEB2769FEFC00FE506B /* AreaBoxEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */; };
-		92C23F87558FBFA2EEA8B1BF /* Pods_TimePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103971B243DC00003DBD8EE9 /* Pods_TimePoint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		103971B243DC00003DBD8EE9 /* Pods_TimePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DF61C20EF9ABBD819CFE7C4 /* Pods-TimePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePoint.debug.xcconfig"; path = "Target Support Files/Pods-TimePoint/Pods-TimePoint.debug.xcconfig"; sourceTree = "<group>"; };
 		730D4A212765A1D800A9968E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		730D4A232765A21B00A9968E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		730D4A2D2765EE6C00A9968E /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
@@ -44,7 +41,6 @@
 		73C78AE62768CACA00FE506B /* TimelineScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScreenViewModel.swift; sourceTree = "<group>"; };
 		73C78AE82768CB1100FE506B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaBoxEvent.swift; sourceTree = "<group>"; };
-		A3216EFF107CA81ADC7481FF /* Pods-TimePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePoint.release.xcconfig"; path = "Target Support Files/Pods-TimePoint/Pods-TimePoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,22 +48,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C23F87558FBFA2EEA8B1BF /* Pods_TimePoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D688B0F2A7245FFFB450DAB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4DF61C20EF9ABBD819CFE7C4 /* Pods-TimePoint.debug.xcconfig */,
-				A3216EFF107CA81ADC7481FF /* Pods-TimePoint.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		730D4A1F2765A1B900A9968E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +105,6 @@
 				736B9479276B74E400E0748E /* .swiftlint.yml */,
 				736A1C242764DC100049B882 /* TimePoint */,
 				736A1C232764DC100049B882 /* Products */,
-				2D688B0F2A7245FFFB450DAB /* Pods */,
-				A63104DB5A1B407BAD1C2901 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,14 +140,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A63104DB5A1B407BAD1C2901 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				103971B243DC00003DBD8EE9 /* Pods_TimePoint.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,7 +147,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 736A1C302764DC110049B882 /* Build configuration list for PBXNativeTarget "TimePoint" */;
 			buildPhases = (
-				EF0A6E116996D542B70D94D0 /* [CP] Check Pods Manifest.lock */,
 				736B9478276B734A00E0748E /* SwiftLint Script */,
 				736A1C1E2764DC100049B882 /* Sources */,
 				736A1C1F2764DC100049B882 /* Frameworks */,
@@ -249,29 +224,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-		EF0A6E116996D542B70D94D0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TimePoint-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -416,7 +369,6 @@
 		};
 		736A1C312764DC110049B882 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DF61C20EF9ABBD819CFE7C4 /* Pods-TimePoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,7 +399,6 @@
 		};
 		736A1C322764DC110049B882 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3216EFF107CA81ADC7481FF /* Pods-TimePoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

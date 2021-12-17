@@ -9,11 +9,11 @@ import SwiftUI
 
 struct TimelineScreen: View {
     
-    @StateObject private var vm = TimelineScreenViewModel()
+    @StateObject private var viewmodel = TimelineScreenViewModel()
     
     var body: some View {
         NavigationView {
-            ScrollView{
+            ScrollView {
             ZStack {
                 VStack(alignment: .leading) { // time guide line
                         ForEach(1...24, id: \.self, content: { item in
@@ -26,13 +26,13 @@ struct TimelineScreen: View {
                     
                 }
                 .frame(maxWidth: .infinity)
-                HStack{
-                    VStack{
+                HStack {
+                    VStack {
                         //
                     }.frame(width: 40)
                     VStack { // event boxes
                         
-                            ForEach(vm.events, id: \.self, content: {item in
+                            ForEach(viewmodel.events, id: \.self, content: {item in
                                 AreaBoxEvent(data: item, height: 120)
                             })
                         
