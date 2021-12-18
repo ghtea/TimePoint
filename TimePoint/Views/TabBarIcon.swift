@@ -22,6 +22,7 @@ struct TabBarIcon: View {
             .font(.system(size: 24))
             .frame(width: 32, height: 32)
             Text(title)
+                .font(.system(size: 16))
         }
         .onTapGesture {
             viewRouter.currentPageId = tabId
@@ -31,9 +32,6 @@ struct TabBarIcon: View {
 
 struct TabBarIcon_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            TabBarIcon(title: "test", iconSystemName: "heart.fill", tabId: .home)
-            TabBarIcon(title: "test", iconSystemName: "heart.fill", tabId: .home)
-        }
+        TabBarIcon(title: "test", iconSystemName: "heart.fill", tabId: .home)
     }
 }

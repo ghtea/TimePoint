@@ -17,8 +17,8 @@
 		736A1C282764DC100049B882 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736A1C272764DC100049B882 /* RootView.swift */; };
 		736A1C2A2764DC110049B882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736A1C292764DC110049B882 /* Assets.xcassets */; };
 		736A1C2D2764DC110049B882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736A1C2C2764DC110049B882 /* Preview Assets.xcassets */; };
-		736B9477276B693E00E0748E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736B9476276B693E00E0748E /* Colors.swift */; };
 		736B947A276B74E400E0748E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 736B9479276B74E400E0748E /* .swiftlint.yml */; };
+		73A832BD276E30A70070E8C8 /* TabBarAddIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A832BC276E30A70070E8C8 /* TabBarAddIcon.swift */; };
 		73C78AE72768CACA00FE506B /* TimelineScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AE62768CACA00FE506B /* TimelineScreenViewModel.swift */; };
 		73C78AE92768CB1100FE506B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AE82768CB1100FE506B /* Event.swift */; };
 		73C78AEB2769FEFC00FE506B /* AreaBoxEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */; };
@@ -36,8 +36,8 @@
 		736A1C272764DC100049B882 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		736A1C292764DC110049B882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736A1C2C2764DC110049B882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		736B9476276B693E00E0748E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		736B9479276B74E400E0748E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		73A832BC276E30A70070E8C8 /* TabBarAddIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAddIcon.swift; sourceTree = "<group>"; };
 		73C78AE62768CACA00FE506B /* TimelineScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScreenViewModel.swift; sourceTree = "<group>"; };
 		73C78AE82768CB1100FE506B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaBoxEvent.swift; sourceTree = "<group>"; };
@@ -58,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				730D4A2D2765EE6C00A9968E /* TabBarIcon.swift */,
+				73A832BC276E30A70070E8C8 /* TabBarAddIcon.swift */,
 				73C78AEA2769FEFC00FE506B /* AreaBoxEvent.swift */,
 			);
 			path = Views;
@@ -94,7 +95,6 @@
 		730D4A2B2765EDC800A9968E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				736B9476276B693E00E0748E /* Colors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -234,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				730D4A242765A21B00A9968E /* SettingsScreen.swift in Sources */,
-				736B9477276B693E00E0748E /* Colors.swift in Sources */,
 				73C78AE72768CACA00FE506B /* TimelineScreenViewModel.swift in Sources */,
 				736A1C282764DC100049B882 /* RootView.swift in Sources */,
 				730D4A2E2765EE6C00A9968E /* TabBarIcon.swift in Sources */,
@@ -242,6 +241,7 @@
 				730D4A3227660BDF00A9968E /* ViewRouter.swift in Sources */,
 				736A1C262764DC100049B882 /* TimePointApp.swift in Sources */,
 				73C78AEB2769FEFC00FE506B /* AreaBoxEvent.swift in Sources */,
+				73A832BD276E30A70070E8C8 /* TabBarAddIcon.swift in Sources */,
 				730D4A342766431600A9968E /* RulesScreen.swift in Sources */,
 				730D4A36276643D500A9968E /* TimelineScreen.swift in Sources */,
 				730D4A222765A1D800A9968E /* HomeScreen.swift in Sources */,
@@ -383,7 +383,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,7 +413,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

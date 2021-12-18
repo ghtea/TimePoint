@@ -1,0 +1,28 @@
+//
+//  TabBarIcon.swift
+//  TimePoint
+//
+//  Created by wiz on 2021/12/12.
+//
+
+import SwiftUI
+
+struct TabBarAddIcon: View {
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            Image(systemName: "plus.app")
+            .font(.system(size: 36))
+            .frame(width: 32, height: 32)
+        }
+        .onTapGesture {
+            print("add!!!")
+        }
+    }
+}
+
+struct TabBarAddIcon_Previews: PreviewProvider {
+    static var previews: some View {
+        TabBarAddIcon()
+    }
+}

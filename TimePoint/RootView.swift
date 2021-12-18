@@ -10,34 +10,57 @@ import SwiftUI
 struct RootView: View {
     
     @EnvironmentObject private var viewRouter: ViewRouter
-        
+    
+    init() {
+        // https://developer.apple.com/documentation/uikit/uinavigationcontroller/customizing_your_app_s_navigation_bar
+        let appearance = UINavigationBarAppearance()
+
+        appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterial)
+
+        UINavigationBar.appearance().standardAppearance = appearance
+    }
+    
     var body: some View {
         GeometryReader { geometry in
-            VStack {
-                switch viewRouter.currentPageId {
-                case .home :
-                    HomeScreen()
-                case .timeline:
-                    TimelineScreen()
-                case .rules:
-                    RulesScreen()
-                case .settings:
-                    SettingsScreen()
+            ZStack {
+                // Screen
+                Group {
+                    switch viewRouter.currentPageId {
+                    case .home :
+                        HomeScreen()
+                    case .timeline:
+                        TimelineScreen()
+                    case .rules:
+                        RulesScreen()
+                    case .settings:
+                        SettingsScreen()
+                    }
                 }
-                Spacer()
+                
                 // TabBar
-                ZStack {
+                Group {
                     HStack {
                         TabBarIcon(title: "Home", iconSystemName: "heart.fill", tabId: .home)
+                        Spacer()
                         TabBarIcon(title: "Timeline", iconSystemName: "clock.fill", tabId: .settings)
+                        Spacer()
+                        Group {
+                            TabBarAddIcon()
+                        }
+                        Spacer()
                         TabBarIcon(title: "Rules", iconSystemName: "arrow.up.arrow.down.square.fill", tabId: .home)
+                        Spacer()
                         TabBarIcon(title: "Settings", iconSystemName: "gearshape.fill", tabId: .settings)
                     }
-                    .background(Color("TabBarBackground").shadow(radius: 2))
-                }.frame(width: geometry.size.width, height: 64)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 4)
+                    .frame(width: geometry.size.width)
+                    .background(.ultraThinMaterial)
+                }
+                .frame(width: geometry.size.width, height: geometry.size.height, alignment: .bottom)
+                    
             }.frame(width: geometry.size.width)
-                
-        }.edgesIgnoringSafeArea(.bottom)
+        }
     }
 }
 
