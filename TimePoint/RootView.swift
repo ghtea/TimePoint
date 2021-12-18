@@ -40,17 +40,37 @@ struct RootView: View {
                 // TabBar
                 Group {
                     HStack {
-                        TabBarIcon(title: "Home", iconSystemName: "heart.fill", tabId: .home)
+                        TabBarIcon(
+                            title: "Home",
+                            iconSystemName: "heart.fill",
+                            tabId: .home,
+                            isSelected: viewRouter.currentPageId == .home
+                        )
                         Spacer()
-                        TabBarIcon(title: "Timeline", iconSystemName: "clock.fill", tabId: .settings)
+                        TabBarIcon(
+                            title: "Timeline",
+                            iconSystemName: "clock.fill",
+                            tabId: .timeline,
+                            isSelected: viewRouter.currentPageId == .timeline
+                        )
                         Spacer()
                         Group {
                             TabBarAddIcon()
                         }
                         Spacer()
-                        TabBarIcon(title: "Rules", iconSystemName: "arrow.up.arrow.down.square.fill", tabId: .home)
+                        TabBarIcon(
+                            title: "Rules",
+                            iconSystemName: "arrow.up.arrow.down.square.fill",
+                            tabId: .rules,
+                            isSelected: viewRouter.currentPageId == .rules
+                        )
                         Spacer()
-                        TabBarIcon(title: "Settings", iconSystemName: "gearshape.fill", tabId: .settings)
+                        TabBarIcon(
+                            title: "Settings",
+                            iconSystemName: "gearshape.fill",
+                            tabId: .settings,
+                            isSelected: viewRouter.currentPageId == .settings
+                        )
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 4)

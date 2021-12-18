@@ -15,6 +15,7 @@ struct TabBarAddIcon: View {
             .font(.system(size: 36))
             .frame(width: 32, height: 32)
         }
+        .foregroundColor(Color("TabBarIcon"))
         .onTapGesture {
             print("add!!!")
         }
